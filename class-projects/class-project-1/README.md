@@ -1,3 +1,3 @@
-# [Class Project Title]
+Class project 1
 
-Provide a short description of your results, if applicable.
+Figma design for hero section of a DJ portfolio website

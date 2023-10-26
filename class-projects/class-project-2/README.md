@@ -1,3 +1,5 @@
-# [Class Project Title]
+Class project 2
 
-Provide a short description of your results, if applicable.
+Developing user personas
+Developing infromation architecture using card sorting method
+Creating a sitemap for DJ portfolio website
