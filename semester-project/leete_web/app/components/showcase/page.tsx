@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog",
+  title: "LEETE",
 };
 
 const posts = [12, 3, 56, 7, 89];

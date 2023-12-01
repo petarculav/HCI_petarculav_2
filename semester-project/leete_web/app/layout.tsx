@@ -20,7 +20,7 @@ export default function RootLayout({
         <nav className="flex justify-center p-14">
         <ul className="flex gap-8">
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/components/showcase">Work</Link></li>
+          <li><Link href="/components/showcase">Work showcase</Link></li>
           <li><Link href="/components/about">About</Link></li>
           <li><Link href="/components/bookings">Bookings</Link></li>
           <li><Link href="/components/signup">Sign Up</Link></li>
