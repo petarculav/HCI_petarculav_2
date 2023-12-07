@@ -1,7 +1,7 @@
 function Home() {
   return (
     <main>
-      <h1 className="flex justify-center p-14 text-4x1"> Home of DJ LEETE</h1>
+      <h1 className="flex justify-center text-3xl font-bold p-10"> Home of DJ LEETE</h1>
     </main>
   );
 }

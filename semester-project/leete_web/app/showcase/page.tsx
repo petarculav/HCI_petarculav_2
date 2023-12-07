@@ -1,6 +1,6 @@
 import Link from "next/link";
 import clsx from "clsx";
-
+//OVO JE MENI KAO BLOG NA GITHUBU
 export interface Post {
   userId: number;
   id: number;
