@@ -126,7 +126,7 @@ export default function RootLayout({
     </html>
   );
 }
-*/}
+
 
 import type { Metadata } from "next";
 import {
@@ -157,9 +157,9 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: {
     template: "Lab project | %s",
-    default: "Lab project",
+    default: "LEETE",
   },
-  description: "Next.js lab project",
+  description: "DJ LEETE's web",
 };
 
 // Get this info from some external source (e.g. CMS)
@@ -185,6 +185,51 @@ export default function RootLayout({
           playfairDisplay.variable
         )}
       >
+        <nav className="flex items-center justify-center p-4">
+          <ul className="flex gap-8">
+            {Object.entries(pages).map(([name, path]) => (
+              <li key={name}>
+                <Link href={path}>{name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        {children}
+      </body>
+    </html>
+  );
+}
+*/}
+
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+// Get this info from some external source (e.g. CMS)
+const pages = {
+  bookings: "/bookings",
+  mixes: "/showcase",
+  LEETE: "/",
+  about: "/about",
+  contact: "/contact",
+};
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "LEETE",
+  description: "DJ LEETE's web",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
         <nav className="flex items-center justify-center p-4">
           <ul className="flex gap-8">
             {Object.entries(pages).map(([name, path]) => (

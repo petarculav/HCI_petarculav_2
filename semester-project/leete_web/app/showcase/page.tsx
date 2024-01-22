@@ -62,7 +62,7 @@ export default async function Blog({
           <div className="flex gap-4">
             <Link
               href={{
-                pathname: "/components/showcase",
+                pathname: "/showcase",
                 query: { _page: 1, _limit: pageSize },
               }}
               className="rounded border bg-gray-100 px-3 py-1 text-gray-800"
@@ -71,7 +71,7 @@ export default async function Blog({
             </Link>
             <Link
               href={{
-                pathname: "/components/showcase",
+                pathname: "/showcase",
                 query: { _page: page > 1 ? page - 1 : 1, _limit: pageSize },
               }}
               className={clsx(
@@ -83,7 +83,7 @@ export default async function Blog({
             </Link>
             <Link
               href={{
-                pathname: "/components/showcase",
+                pathname: "/showcase",
                 query: { _page: page + 1, _limit: pageSize },
               }}
               className={clsx(
@@ -95,7 +95,7 @@ export default async function Blog({
             </Link>
             <Link
               href={{
-                pathname: "/components/showcase",
+                pathname: "/showcase",
                 query: { _page: totalPages, _limit: pageSize },
               }}
               className="rounded border bg-gray-100 px-3 py-1 text-gray-800"
@@ -109,8 +109,8 @@ export default async function Blog({
       <ul className="flex flex-col gap-8">
         {posts.map((post) => (
           <li key={post.id}>
-            <Link href={`components/showcase/${post.id}`}>
-              <span className="text-2xl text-purple-500">
+            <Link href={`showcase/${post.id}`}>
+              <span className="text-2xl text-white-500">
                 Mix {post.title}
               </span>
             </Link>

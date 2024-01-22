@@ -1,0 +1,49 @@
+/* About.css */
+
+.about-container {
+    color: white;
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.about-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-description {
+    background-color: #404040;
+    padding: 15px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.about-description p {
+    margin-bottom: 15px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
