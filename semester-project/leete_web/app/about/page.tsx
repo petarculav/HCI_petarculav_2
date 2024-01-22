@@ -1,5 +1,5 @@
-import React from 'react';
-import './About.css';
+import React from "react";
+import "./About.css";
 
 export default function About() {
     return (
@@ -17,7 +17,7 @@ export default function About() {
                         His journey began in the vibrant streets of Split, where he discovered his love for music. Over the years, LEETE has honed his skills, experimenting with various genres and creating a signature sound that is both innovative and timeless.
                     </p>
                     <p>
-                        Whether performing at local clubs or international music festivals, LEETE's sets are an immersive experience, taking listeners on a journey through sound and emotion. His dedication to his craft and his ability to connect with his audience make him a must-see act for any music enthusiast.
+                        Whether performing at local clubs or international music festivals, LEETEs sets are an immersive experience, taking listeners on a journey through sound and emotion. His dedication to his craft and his ability to connect with his audience make him a must-see act for any music enthusiast.
                     </p>
                 </div>
             </section>
