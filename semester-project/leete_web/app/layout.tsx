@@ -213,6 +213,7 @@ const pages = {
   LEETE: "/",
   about: "/about",
   contact: "/contact",
+  //signup: "/signup"
 };
 
 const inter = Inter({ subsets: ["latin"] });
