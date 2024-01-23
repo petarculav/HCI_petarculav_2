@@ -1,0 +1,101 @@
+/* BookingPage.module.css */
+
+.container {
+    font-family: Arial, sans-serif;
+    color: #fff; /* White text */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.calendar {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border-radius: 8px;
+    padding: 10px;
+    border: none; /* No borders */
+    width: 100%;
+}
+
+.react-calendar {
+    border: none;
+}
+
+/* Style for the active/selected date */
+.react-calendar__tile--active {
+    background-color: grey !important; /* Grey background for the selected date */
+    color: white !important;
+    border-radius: 50% !important; /* Fully rounded corners for the selected date */
+}
+
+/* Style for weekdays (including Fridays) */
+.react-calendar__month-view__weekdays__weekday,
+.react-calendar__month-view__days__day {
+    color: darkgreen !important; /* Dark green color for weekdays text */
+}
+
+/* Style for the hover effect on days */
+.react-calendar__tile:enabled:hover {
+    background-color: grey !important; /* Grey background for hover */
+    color: white !important;
+    border-radius: 50% !important; /* Fully rounded corners for hover */
+    transition: background-color 0.3s ease !important; /* Smooth transition for hover effect */
+}
+
+.selectedDate {
+    margin-top: 20px;
+    font-size: 16px;
+    color: grey;
+}
+
+/* BookingForm.module.css */
+
+.bookingForm {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  .bookingForm label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .bookingForm input[type="text"],
+  .bookingForm input[type="email"],
+  .bookingForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3e3e3e;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .bookingForm textarea {
+    resize: vertical;
+  }
+  
+  .bookingForm button[type="submit"] {
+    background-color: #505050;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .bookingForm button[type="submit"]:hover {
+    background-color: #222;
+  }
+  
