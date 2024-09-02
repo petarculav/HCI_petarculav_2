@@ -201,20 +201,11 @@ export default function RootLayout({
 }
 */}
 
+// app/layout.tsx (or your specific layout file)
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Inter } from "next/font/google";
+import Navigation from  "./navigation";
 import "./globals.css";
-
-// Get this info from some external source (e.g. CMS)
-const pages = {
-  bookings: "/bookings",
-  mixes: "/showcase",
-  LEETE: "/",
-  about: "/about",
-  contact: "/contact",
-  //signup: "/signup"
-};
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -231,16 +222,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="flex items-center justify-center p-4">
-          <ul className="flex gap-8">
-            {Object.entries(pages).map(([name, path]) => (
-              <li key={name}>
-                <Link href={path}>{name}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <Navigation /> {/* Render the navigation component */}
+        <main className="pt-16"> {/* Adjust this padding as necessary */}
         {children}
+      </main>
       </body>
     </html>
   );

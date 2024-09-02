@@ -1,0 +1,98 @@
+/* BookingPage.module.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.calendar {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border-radius: 8px;
+  padding: 10px;
+  border: none; /* No borders */
+  width: 100%;
+}
+
+.tile {
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.tile:hover {
+  background-color: rgb(54, 52, 52) !important;
+  color:#F97316;
+}
+
+.react-calendar {
+  border: none;
+}
+
+.react-calendar--tile {
+  border-radius: 10px !important;
+}
+.selectedTile {
+  background-color: white !important;
+  color: #F97316 !important;
+}
+
+/* BookingPage.module.css */
+.todayTile {
+  background-color: black !important;
+  border: 2px solid !important;
+  border-color: #F97316 !important; /* Use !important to override default styles */
+  color: white; /* Optional: set text color to ensure visibility */
+  border-radius: 10px;
+}
+
+.bookedTile {
+  position: relative;
+  background-color: black !important; /* Ensure background is black */
+color: white !important; /* Light gray background for visibility */
+}
+
+
+
+
+.bookedTile::after {
+  content: "X";
+  color: orange;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pastTile {/* Light gray background for past dates */
+  color: #9e9e9e; /* Gray text color */
+  pointer-events: none; /* Disable interaction */
+}
+
+.bookedTile {
+  position: relative;
+  background-color: black !important;
+  color: white !important;
+}
+
+.bookedTile::after {
+  content: "X";
+  color: #F97316;
+  font-weight: bold;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.weekendTile abbr {
+  color: #F97316; /* Set text color to orange for weekends */
+}
